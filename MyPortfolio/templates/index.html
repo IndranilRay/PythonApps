@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+    <title>{{ title }}</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,25 +15,22 @@
 
     <!-- FontAwesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-
     <!-- Global CSS -->
     <!--<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/plugins/bootstrap/css/bootstrap.min.css') }}">
 
 
     <!-- github calendar css -->
-    <!--<link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">-->
+
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/plugins/github-calendar/dist/github-calendar.css') }}">
 
     <!-- github acitivity css -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
 
-    <!--<link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">-->
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/plugins/github-activity/github-activity-0.1.5.min.css') }}" />
 
     <!-- Theme CSS -->
-    <!--<link id="theme-style" rel="stylesheet" href="assets/css/styles.css">-->
-    <link id="theme-style" rel="stylesheet" href="{{ url_for('static', filename='assets/plugins/github-activity/github-activity-0.1.5.min.css') }}" />
+    <link id="theme-style" rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}" />
 
 </head>
 
@@ -41,7 +38,7 @@
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container clearfix">
-            <img class="profile-image img-fluid float-left" src="static/assets/images/profile.png" alt="James Lee" />
+            <img class="profile-image img-fluid float-left" src="{{ url_for('static', filename='assets/images/profile.png') }}" alt="James Lee" />
             <div class="profile-content float-left">
                 <h1 class="name">James Lee</h1>
                 <h2 class="desc">Web App Developer</h2>
@@ -77,11 +74,11 @@
                         <div class="content">
 
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank">KickStarter - Velocity</a></h3>
+                                <h3 classfilename = ="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank">KickStarter - Velocity</a></h3>
                                 <p class="summary">A popular Bootstrap 4 theme for promoting startup products</p>
                                 <div class="featured-image has-ribbon">
                                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/velocity-bootstrap-theme-for-startup-products/" target="_blank">
-                                    <img class="img-fluid project-image" src="assets/images/projects/project-featured.png" alt="project name" />
+                                    <img class="img-fluid project-image" src="{{ url_for('static', filename = 'assets/images/projects/project-featured.png') }}" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">New</div>
@@ -96,7 +93,7 @@
                             <hr class="divider" />
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="project name" />
+                                <img class="img-fluid project-image" src="{{ url_for('static', filename='assets/images/projects/project-1.png') }}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Instance - Bootstrap 4 Portfolio Theme for Aspiring Full Stack Developers</a></h3>
@@ -107,7 +104,7 @@
 
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-2.png" alt="project name" />
+                                <img class="img-fluid project-image" src="{{ url_for('static', filename='assets/images/projects/project-2.png') }}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Bootstrap 4 Theme for WebDev Agencies and Freelance Developers</a></h3>
@@ -118,7 +115,7 @@
 
                              <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-3.png" alt="project name" />
+                                <img class="img-fluid project-image" src="{{ url_for('static', filename='assets/images/projects/project-3.png') }}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">Startup Kit - Bootstrap 4 Theme for SaaS Startups</a></h3>
@@ -129,7 +126,7 @@
 
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/tempo-bootstrap-theme-for-startups/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                <img class="img-fluid project-image" src="{{ url_for('static', filename='assets/images/projects/project-4.png') }}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/tempo-bootstrap-theme-for-startups/" target="_blank">Tempo - Bootstrap 4 Theme for Startups</a></h3>
@@ -139,7 +136,7 @@
                             </div><!--//item-->
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-5.png" alt="project name" />
+                                <img class="img-fluid project-image" src="{{ url_for('static', filename='assets/images/projects/project-5.png') }}" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/delta-bootstrap-theme-for-mobile-apps/" target="_blank">Delta - Bootstrap 4 Theme for Promoting Mobile Apps</a></h3>
@@ -411,18 +408,22 @@
     </footer><!--//footer-->
 
     <!-- Javascript -->
-    <!--<script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>-->
     <script type="text/javascript" src="{{ url_for('static', filename='assets/plugins/jquery-3.3.1.min.js') }}"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='assets/plugins/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='assets/plugins/jquery-rss/dist/jquery.rss.min.js')}}"></script>
+
     <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='assets/plugins/github-calendar/dist/github-calendar.min.js') }}"></script>
+
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='assets/plugins/github-activity/github-activity-0.1.5.min.js') }}"></script>
+
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 </body>
 </html>
 
