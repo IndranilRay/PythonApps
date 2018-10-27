@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{%endblock%} - Full Stack Developer</title>
+    {%include "sections/header.html" %}
+</head>
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left" src="{{ url_for('static', filename='assets/images/devneal.png') }}" alt="Indranil Ray" />
+            <div class="profile-content float-left">
+                <h1 class="name">{%block name%}{%endblock%}</h1>
+                <h2 class="desc">{%block desc%}{%endblock%}</h2>
+                {%include "sections/social-links.html" %}
+            </div><!--//profile-->
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="container sections-wrapper">
+        {%block content%}
+        {%endblock%}
+    </div>
+    {%include "sections/footer.html" %}
+</body>
+</html>
