@@ -21,6 +21,10 @@ jQuery(document).ready(function($) {
     
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
+
+    $(function() {
+        $('[data-toggle="tooltip]').tooltip()
+    })
     
     
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
@@ -64,7 +68,6 @@ jQuery(document).ready(function($) {
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
-
+    GitHubActivity.feed({ username: "IndranilRay", selector: "#ghfeed" });
 
 });
