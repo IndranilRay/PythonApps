@@ -1,2 +1,2 @@
 # PythonApps
-Repository contains  small python web  apps and console apps programmed using web frameworks and libraries.
+Repository contains python web  apps and console apps programmed using web frameworks ,libraries, APIS and packages.
